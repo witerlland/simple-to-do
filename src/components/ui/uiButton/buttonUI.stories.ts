@@ -1,17 +1,19 @@
 import buttonUI from "./buttonUI.vue"
 
 export default {
-	title: "Buttons / Default",
+	title: "UI / Button Default",
 	component: buttonUI,
 	args: {
 		label: "Button",
-		design: "default",
-		block: false
+		design: "",
+		block: false,
+		icon: "",
 	},
 	argTypes: {
 		label: { type: "string" },
 		design: { type: "string" },
-		block: { type: "boolean" }
+		block: { type: "boolean" },
+		icon: { type: "string" },
 	},
 	parameters: {
 		backgrounds: {

@@ -1,19 +1,21 @@
 import inputUI from "./inputUI.vue"
 
 export default {
-	title: "Simple inputs / Input",
+	title: "UI / Input Default",
 	component: inputUI,
 	args: {
-		label: "Simple Input",
+		label: "Simple Input:",
 		placeholder: "A simple input placeholder",
 		type: 'text',
-		modelValue: 'Just a simple input'
+		modelValue: '',
+		block: false
 	},
 	argTypes: {
 		label: { type: "string" },
 		placeholder: { type: "string" },
 		type: { type: "string" },
-		modelValue: { type: 'unknown' }
+		modelValue: { type: 'unknown' },
+		block: { type: 'boolean' }
 	},
 	parameters: {
 		backgrounds: {
